@@ -7,7 +7,7 @@ mkdir -p data
 
 # Version data
 if git diff data/*.csv | grep . > /dev/null; then
-  echo "Data updated!"
+  echo "Veri güncellendi!"
   git commit -m "update source data" data/*.csv
 
   # Build agregated data for dashboard

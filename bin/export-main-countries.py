@@ -15,22 +15,24 @@ from collections import defaultdict
 def clean_region(r):
     r = r.strip(" *")
     r = r.replace("Cruise Ship", "Diamond Princess")
-    r = r.replace("Republic of Korea", "South Korea")
+    r = r.replace("USA", "ABD")
+    r = r.replace("Republic of Korea", "Güney Kore")
     r = r.replace("Cape Verde", "Cabo Verde")
     r = r.replace("East Timor", "Timor-Leste")
     r = r.replace("Republic of the Congo", "Congo (Brazzaville)")
-    r = r.replace("Korea, South", "South Korea")
-    r = r.replace("Mainland China", "China")
-    r = r.replace("Martinique", "France")
-    r = r.replace("Reunion", "France")
-    r = r.replace("Guadeloupe", "France")
-    r = r.replace("French Guiana", "France")
-    r = r.replace("Russian Federation", "Russia")
+    r = r.replace("Korea, South", "Güney Kore")
+    r = r.replace("France", "Fransa")
+    r = r.replace("Mainland China", "Çin")
+    r = r.replace("Martinique", "Fransa")
+    r = r.replace("Reunion", "Fransa")
+    r = r.replace("Guadeloupe", "Fransa")
+    r = r.replace("French Guiana", "Fransa")
+    r = r.replace("Russian Federation", "Rusya")
     r = r.replace("United States Virgin", "Virgin")
     r = r.replace("The ", "")
     r = r.replace(", The", "")
     if r == "US":
-        r = "USA"
+        r = "ABD"
     return r
 
 def clean_spain_locality(r):
